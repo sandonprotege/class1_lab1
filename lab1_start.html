@@ -1,0 +1,26 @@
+<html>
+	<head>
+<title>My awesome game</title>
+	</head>
+	<body>
+<h2>By Me</h2>
+<canvas id="game" style="background:black"/>
+    <script language="Javascript">
+      const appWidth = 640; //define the width in pixels
+      const appHeight = 480; //define the height in pixels
+      var theCanvas = document.getElementById("game");
+      theCanvas.width = appWidth;
+      theCanvas.height = appHeight;
+      
+      function numberGame() {
+      	console.log("Number game has begun");
+      }
+      
+      function startCanvasApp() {
+      	console.log("Game started");
+        numberGame();
+      }
+      window.addEventListener("load", startCanvasApp);
+	</script>  
+	</body>
+</html>
